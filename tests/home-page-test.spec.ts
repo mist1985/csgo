@@ -26,10 +26,7 @@ test.describe('Testing the Home Page', () => {
       await test.step('Enter a bet, increase it by 100 and clear it ', async () => {
         await homePage.enterBet(500);
         await homePage.bet100.click();
-        await page.screenshot({ path: 'C:/Users/MIHAJLO/Documents/GitHub/csgo/screenshot+100.png' });
         await homePage.clearBet()
-        await page.screenshot({ path: 'C:/Users/MIHAJLO/Documents/GitHub/csgo/screenshot+clear.png' });
-
       });
      
     });
