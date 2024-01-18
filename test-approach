@@ -1,1 +1,58 @@
+This is our main product and the landing page https://csgoempire.com/roulette
+How would you approach the testing of roulette? Describe the tests that you would do and the things you'd pay attention to.
+
+
+1. Exploratory testing
+
+The first thing would be to go through an exploratory testing of the site, to make sure that everything loads as it should, that all the UI elements like buttons, text fields, and graphics are displayed.
+There are no broken links, broken images, or misplaced elements.
+I use a tool called Screaming Frog, which checks all of the links if some links are 404, or 500s.
+- Open the Inspect console tools for any errors. Make sure that the warning message
+"Stop! Do not send anyone your cookies or paste any code in here. Any "hacks" or "exploits" are a SCAM! They WILL steal all of your coins." is clearly visible.
+
+2. Cross-browser testing
+
+The second test would be to check the consistency of the UI elements across multiple browsers, operating systems and mobile devices (mobile phones, tablets).
+A tool that I would use for this would be BrowserStack. This would also test the site's responsive design.
+
+3. Locale (Language) testing
+Check the UI interface in different supported languages. Whether all the data displayed is correct, and whether all supported languages are displaying correctly.
+https://csgoempire.com/faq for example the paragraph sections do not support languages.  
+
+4. Functionality of the web elements. All these tests will be covered as mentioned earlier in multiple browsers/OS/devices.
+
+* Chat section
+- Test the navigation and functionality of the chat
+- Switching to different countries
+- Typing a message
+- Chat menu options and their functionality
+- The relevant icons and user icons are displayed
+
+* Roulette section
+- Check whether the roulette section is working
+- The betting field and buttons are correctly displaying their values
+- The three columns of bet tables are properly populating the bets
+- Sign-in button - redirects the user to Steam to log in
+- Signing in and testing the deposit and withdrawal functions.
+
+* Daily Roulette Race
+- The list is properly displayed
+- The prize is properly displayed
+- The pagination works correctly
+- Race rules popup window displays correctly
+
+* Header and footer menus and buttons
+- Test all the buttons in the header whether they navigate the user to the appropriate page
+- Withdraw/Deposit buttons work and the user is redirected to the appropriate page
+- All the social media buttons are working correctly
+
+* Support chat
+- Test whether the support chat is showing up
+- Test whether the chat functionalities are working properly
+- Messages are getting sent through and no error is displayed
+
+* Sounds
+- Test whether the sound is turned on and off 
+
+
 
