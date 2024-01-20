@@ -30,7 +30,10 @@ This repository contains a Playwright testing suite that highlights:
 
 - Document explaining the testing approach of Roulette
 - Comprehensive test coverage across multiple browsers.
-- Integration with GitHub Actions for CI/CD with reports
+- Integration with GitHub Actions for CI/CD with reports\
+
+![image](https://github.com/mist1985/csgo/assets/28026342/664ccfd4-5b72-4863-95f3-31c9ab880337)
+
 
 ### Technical Highlights
 
@@ -44,7 +47,7 @@ To run this project:
 
 1. Clone the repository:
    ```bash
-   git clone [repository URL]
+   git clone [[repository URL]](https://github.com/mist1985/csgo)
 2. Install dependencies
    npm install
 3. Run the tests
