@@ -47,7 +47,7 @@ To run this project:
 
 1. Clone the repository:
    ```bash
-   git clone [[repository URL]](https://github.com/mist1985/csgo)
+   git clone https://github.com/mist1985/csgo
 2. Install dependencies
    npm install
 3. Run the tests
