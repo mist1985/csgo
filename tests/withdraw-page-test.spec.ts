@@ -12,7 +12,7 @@ test.describe('Testing the Home Page', () => {
     test('Check if withdraw page elements are displayed', async ({ page }) => {
       const withdrawPage = new WithdrawPage(page);
 
-      await test.step('Check if elements are visble', async () => {
+      await test.step('Check if elements are visible', async () => {
         try {
           await expect(withdrawPage.csgo).toBeVisible();
           await expect(withdrawPage.bitcoin).toBeVisible();
