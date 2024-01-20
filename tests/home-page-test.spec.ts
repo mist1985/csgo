@@ -10,9 +10,12 @@ test.beforeEach(async ({ page }, testInfo) => {
 test.describe('Testing the CSGO Empire Roulette Home Page', () => {
       
     test('Check if home page elements are displayed', async ({ page }) => {
+      // First we initialize the HomePage object which contains the locators for all of the elements
       const homePage = new HomePage(page);
 
       await test.step('Check if elements are visble', async () => {
+
+        // We use the Try/Catch method here. The following lines assert that each element is visible on the page
         try {
           await expect(homePage.logo).toBeVisible();
           await expect(homePage.roulette).toBeVisible();
@@ -40,16 +43,17 @@ test.describe('Testing the CSGO Empire Roulette Home Page', () => {
           await expect(homePage.headerReferrals).toBeVisible();
           await expect(homePage.headerAbout).toBeVisible();
           await expect(homePage.headerDailyCoins).toBeVisible();
-    
+        
         }
         catch (e){
+          // If any of the above assertions fail, catch the error
           throw new Error(`Not all elements are visible or an error occurred in visibility check. The error message is: ${e}`);
         }
       });
       
     });
 
-    
+    // The idea of this test is to check that entering and clearing a bet works
     test('Check entering bet works', async ({ page }) => {
       const homePage = new HomePage(page);
 
@@ -61,12 +65,15 @@ test.describe('Testing the CSGO Empire Roulette Home Page', () => {
      
     });
 
+    // A test to check if clicking on the Sign In button navigates to the Steam login page
     test('Clicking on Sign In navigates to Steam', async ({ page }) => {
       const homePage = new HomePage(page);
 
       await test.step('Click on the Sign in button ', async () => {
         await homePage.signInButton.click()
       });
+      
+      // Here we validate the URL using regex type of validation.
       await test.step('Steam login page is displayed', async () => {
         await expect(page).toHaveURL(/https:\/\/steamcommunity\.com\/openid\/loginform\/\?.*/);
       });
