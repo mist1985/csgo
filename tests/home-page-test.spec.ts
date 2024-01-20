@@ -1,12 +1,13 @@
 import { test, Locator, Page, expect } from '@playwright/test';
 import { HomePage } from '../pages/homepage';   
 
+// Navigate to the roulette page and wait for the site to completely load before proceeding with the test
 test.beforeEach(async ({ page }, testInfo) => {
  await page.goto('https://csgoempire.com/roulette');
  await page.waitForLoadState();
 });
 
-test.describe('Testing the Home Page', () => {
+test.describe('Testing the CSGO Empire Roulette Home Page', () => {
       
     test('Check if home page elements are displayed', async ({ page }) => {
       const homePage = new HomePage(page);
