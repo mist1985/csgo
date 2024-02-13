@@ -1,4 +1,4 @@
-# Playwright / Typescript automation test - Assessment for the position for QA engineer (Fully remote; 2 yrs xp @ $60k) - Mihajlo Stojanovski
+# Playwright / Typescript automation test - Mihajlo Stojanovski
  
 Welcome to my repository showcasing my expertise in automated testing with Playwright.
 
