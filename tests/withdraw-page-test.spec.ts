@@ -1,7 +1,7 @@
 import { test, Locator, Page, expect } from '@playwright/test';
 import { WithdrawPage } from '../pages/withdraw';   
 
-// Even though the task for this project was to test only the home page, I have taken the liberty to show the POM approach I have used.
+// Even though the task for this project was to test only the home page,I have taken the liberty to show the POM approach I have used.
 test.beforeEach(async ({ page }, testInfo) => {
     await page.goto('https://csgoempire.com/withdraw');
     await page.waitForLoadState();
