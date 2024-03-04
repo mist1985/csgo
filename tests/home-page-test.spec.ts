@@ -10,7 +10,7 @@ test.beforeEach(async ({ page }, testInfo) => {
 test.describe('Testing the CSGO Empire Roulette Home Page', () => {
       
     test('Check if home page elements are displayed', async ({ page }) => {
-      // First we initialize the HomePage object which contains the locators for all of the elements
+      // First we initialise the HomePage object which contains the locators for all of the elements
       const homePage = new HomePage(page);
 
       await test.step('Check if elements are visble', async () => {
